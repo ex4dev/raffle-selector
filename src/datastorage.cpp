@@ -31,5 +31,9 @@ QSqlTableModel *DataStorage::makeModel(QObject *parent) {
     QSqlTableModel *model = new QSqlTableModel(parent, m_connection);
     model->setTable("entries");
     model->select();
+    model->setHeaderData(0, Qt::Horizontal, QStringLiteral("Name"));
+    model->setHeaderData(1, Qt::Horizontal, QStringLiteral("Contact Info"));
+    model->setHeaderData(2, Qt::Horizontal, QStringLiteral("# Tickets"));
+    model->setHeaderData(3, Qt::Horizontal, QStringLiteral("Comment"));
     return model;
 }
