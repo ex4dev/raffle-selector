@@ -114,6 +114,11 @@
        <attribute name="title">
         <string>Draw Winner</string>
        </attribute>
+       <widget class="QPushButton" name="drawWinnerButton">
+        <property name="text">
+         <string>Draw Winner</string>
+        </property>
+       </widget>
       </widget>
      </widget>
     </item>

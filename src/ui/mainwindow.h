@@ -18,6 +18,9 @@ public:
 
 private slots:
     void saveEntry();
+    void drawWinner();
+
+int selectRandomWinner();
 
 private:
     Ui::MainWindow *m_ui;
